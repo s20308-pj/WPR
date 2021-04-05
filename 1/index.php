@@ -229,7 +229,7 @@ if(isset($_POST["go9"])){
     if(count($arrayA) == count($arrayB)){
         for($i=0; $i<count($arrayA); $i++){
             if(is_numeric($arrayA[$i]) && is_numeric($arrayB[$i])){
-                $result = (int)$arrayA[$i]*(int)$arrayB[$i];
+                $result =+ (int)$arrayA[$i]*(int)$arrayB[$i];
             } else {
             echo "BŁĄD danych";
                 exit();
@@ -265,7 +265,6 @@ if(isset($_POST["go10"])){
             echo "*";
         }
     }
-
     for($i=0; $i<$starNumber; $i++){
         echo "<br>";
         for($j=$starNumber-$i; $j>0; $j--){
@@ -290,7 +289,6 @@ if(isset($_POST["go10"])){
             echo "*";
         }
     }
-
 }
 ?>
 
